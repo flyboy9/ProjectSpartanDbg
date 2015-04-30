@@ -7,7 +7,7 @@ resumed.
 
 #Usage
 1. Build the solution or [download v0.3]
-  (https://github.com/SkyLined/ProjectSpartanDbg/releases/download/0.3/ProjectSpartanDbg.zip)
+  (https://github.com/SkyLined/ProjectSpartanDbg/releases/download/0.3/ProjectSpartanDbg.0.3.zip)
 2. Start Project Spartan with all threads suspended and attach a debugger, e.g.
   
   ```
