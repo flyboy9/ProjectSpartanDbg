@@ -9,12 +9,14 @@ debugger.
 1. Build the solution or [download v0.2]
   (https://github.com/SkyLined/ProjectSpartanDbg/releases/download/0.2/ProjectSpartanDbg.zip)
 2. Start Project Spartan with all threads suspended, e.g.
+    
     ```
     > ProjectSpartanDbg.exe http://%COMPUTERNAME%:28876
     Project Spartan process id = 320
     >
     ```
 3. Attach your debugger using the provided process id, e.g.
+    
     ```
     > cdb -o -p 320
     Microsoft (R) Windows Debugger Version 6.3.9600.16384 X86
@@ -27,6 +29,7 @@ debugger.
     0:021>
     ```
 4. Resume all threads and run spartan, e.g. 
+    
     ```
     0:021>~*m
     0:021>g
