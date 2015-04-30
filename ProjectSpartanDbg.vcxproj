@@ -13,7 +13,8 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{DB4F637B-E5AA-4394-AAFE-72F6D4C13232}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>ProjectSpartanLauncher</RootNamespace>
+    <RootNamespace>ProjectSpartanDbg</RootNamespace>
+    <ProjectName>ProjectSpartanDbg</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -82,7 +83,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ProjectSpartanLauncher.cpp" />
+    <ClCompile Include="ProjectSpartanDbg.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>

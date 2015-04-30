@@ -26,7 +26,7 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ProjectSpartanLauncher.cpp">
+    <ClCompile Include="ProjectSpartanDbg.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
