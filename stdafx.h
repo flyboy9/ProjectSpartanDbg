@@ -11,3 +11,4 @@
 #include <tchar.h>
 #include <Shobjidl.h>
 #include <tlhelp32.h>
+#include <string>
