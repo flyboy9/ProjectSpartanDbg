@@ -1,24 +1,19 @@
 # Project Spartan Dbg
-A simple command line exe to launch Project Spartan to open a URL and suspend
-all threads in the process. It will output the id of the spartan.exe process.
-This can be used to attach a debugger before Project Spartan opens the URL.
-Tip: use `~*m` in WinDBG/cdb to resume all threads once you've attached the
-debugger.
+A simple command line exe to launch Project Spartan and immediately suspend all
+threads in the process. It can then optionally start an application such as a
+debugger and provide the process id for spartan.exe through the command-line.
+A url can be provided that Project Spartan will open as soon as all threads are
+resumed.
 
 #Usage
-1. Build the solution or [download v0.2]
-  (https://github.com/SkyLined/ProjectSpartanDbg/releases/download/0.2/ProjectSpartanDbg.zip)
-2. Start Project Spartan with all threads suspended, e.g.
+1. Build the solution or [download v0.3]
+  (https://github.com/SkyLined/ProjectSpartanDbg/releases/download/0.3/ProjectSpartanDbg.zip)
+2. Start Project Spartan with all threads suspended and attach a debugger, e.g.
   
   ```
-  C:\path> ProjectSpartanDbg.exe http://%COMPUTERNAME%:28876
+  C:\path> ProjectSpartanDbg.exe http://%COMPUTERNAME%:28876 cdb.exe -o -p @pid@
   Project Spartan process id = 320
-  C:\path>
-  ```
-3. Attach your debugger using the provided process id, e.g.
   
-  ```
-  C:\path> cdb -o -p 320
   Microsoft (R) Windows Debugger Version 6.3.9600.16384 X86
   Copyright (c) Microsoft Corporation. All rights reserved.
   <<<snip>>>
@@ -28,7 +23,7 @@ debugger.
   77ec3060 cc              int     3
   0:021>
   ```
-4. Resume all threads and run spartan, e.g. 
+3. Resume all threads and run spartan to have it open the specified URL, e.g. 
   
   ```
   0:021>~*m
